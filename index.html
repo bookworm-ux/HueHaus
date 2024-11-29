@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HueHaus</title>
-
     <!-- Google Font Link -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
-
     <!-- Adobe Fonts Integration -->
     <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css">
-    
     <style>
-        body {
-            font-family: 'Adobe Caslon Pro', serif; /* Adobe Caslon Pro for footer */
+        /* Reset and Body Styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the page height covers the full viewport */
+        }
+        /* Wrapper for content and footer */
+        .wrapper {
+            flex: 1; /* Pushes the footer down */
         }
         header {
             background-color: #f4f4f4;
@@ -24,24 +34,21 @@
         }
         header h1 {
             font-family: 'DM Serif Text', serif;
-            font-weight: 400; /* Regular weight */
+            font-weight: 400;
             font-size: 2.5rem;
             margin: 0;
             color: #333;
-        }
-        nav {
-            margin-top: 15px;
         }
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: center; /* Centers the navigation items */
-            gap: 120px; /* Adds spacing between items */
+            justify-content: center; /* Centers the nav */
+            gap: 20px; /* Space between links */
         }
         nav ul li {
-            font-family: 'Adobe Caslon Pro', serif; /* Adobe Caslon Pro for navigation links */
+            font-family: 'Adobe Caslon Pro', serif;
         }
         nav ul li a {
             text-decoration: none;
@@ -49,17 +56,14 @@
             font-size: 1.2rem;
         }
         nav ul li a:hover {
-            color: #007BFF; /* Add hover effect */
+            color: #007BFF;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            font-family: 'Adobe Caslon Pro', serif; /* Adobe Caslon Pro for footer */
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            font-family: 'Adobe Caslon Pro', serif;
         }
     </style>
 </head>
@@ -77,6 +81,20 @@
         </nav>
     </header>
 
+    <!-- Wrapper Content -->
+    <div class="wrapper">
+        <main>
+            <section style="padding: 20px;">
+                <h2>Welcome to HueHaus</h2>
+                <p>This is a sample layout that ensures the footer always appears at the end of the page content.</p>
+            </section>
+            <section style="padding: 20px; height: 1000px;">
+                <p>Scroll down to see the footer appear at the end.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
     <footer>
         &copy; 2024 HueHaus. All rights reserved.
     </footer>
