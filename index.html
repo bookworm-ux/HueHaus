@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
     <!-- Adobe Fonts Integration -->
     <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css">
+    
     <style>
         /* Reset and Body Styles */
         * {
@@ -16,16 +17,16 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Adobe Caslon Pro', serif; /* Adobe Caslon Pro for nav items */
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Ensures the page height covers the full viewport */
+            min-height: 100vh; /* Ensures the page covers the viewport */
         }
         /* Wrapper for content and footer */
         .wrapper {
-            flex: 1; /* Pushes the footer down */
+            flex: 1; /* Pushes the footer to the bottom */
         }
         header {
             background-color: #f4f4f4;
@@ -42,13 +43,13 @@
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 20px 0 0 0;
             display: flex;
-            justify-content: center; /* Centers the nav */
+            justify-content: center; /* Centers the nav items */
             gap: 20px; /* Space between links */
         }
         nav ul li {
-            font-family: 'Adobe Caslon Pro', serif;
+            font-family: 'Adobe Caslon Pro', serif; /* Adobe Caslon Pro for nav items */
         }
         nav ul li a {
             text-decoration: none;
@@ -56,14 +57,14 @@
             font-size: 1.2rem;
         }
         nav ul li a:hover {
-            color: #007BFF;
+            color: #007BFF; /* Add hover effect */
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            font-family: 'Adobe Caslon Pro', serif;
+            font-family: 'Adobe Caslon Pro', serif; /* Adobe Caslon Pro for footer */
         }
     </style>
 </head>
@@ -86,10 +87,10 @@
         <main>
             <section style="padding: 20px;">
                 <h2>Welcome to HueHaus</h2>
-                <p>This is a sample layout that ensures the footer always appears at the end of the page content.</p>
+                <p>This is the content section. Add as much content as you like, and the footer will always stay at the bottom of the page!</p>
             </section>
             <section style="padding: 20px; height: 1000px;">
-                <p>Scroll down to see the footer appear at the end.</p>
+                <p>Scroll down to see how the footer adjusts to longer content.</p>
             </section>
         </main>
     </div>
